@@ -10,7 +10,7 @@
 // console.log("hello world")
 
 
-console.log("1" == 1)
+// console.log("1" == 1)
 
 
 
@@ -36,16 +36,27 @@ console.log("1" == 1)
 
 
 // switch statements
-const value = 4
-switch (value){
-    case  3:
-        console.log("value is coreect !")
-        break;
-    case  4:
-        console.log("its is not that value")
-        break;
+// const value = 4
+// switch (value){
+//     case  3:
+//         console.log("value is coreect !")
+//         break;
+//     case  4:
+//         console.log("its is not that value")
+//         break;
     
-    default:
-        console.log("gone there")
-        break;
-}
+//     default:
+//         console.log("gone there")
+//         break;
+// }
+
+
+// Array in JS
+const arr = [1, 2, 4, 5, 5, true]
+
+const arr2 =  Array.from("ayush")
+console.log(arr2)
+
+arr2[0] = "y"
+console.log(arr2)
+
