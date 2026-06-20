@@ -70,4 +70,7 @@ console.log(arr2)
 //     console.log("yes")
 //     break;
 // }
-
+for (let i = 0 ; i < 10; i++) {
+    console.log(i)
+    continue
+}
