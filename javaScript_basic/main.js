@@ -1,5 +1,5 @@
 // const prompt = require("prompt-sync")()
-
+// const prompt = require('prompt-sync')({ sigint: true });
 // var helloWorld = "hello"
 // helloWorld = "world"
 
@@ -31,5 +31,21 @@ console.log("1" == 1)
 // }
 
 
-const cond = false ? "it is " : "no"
-console.log(cond)
+// const cond = false ? "it is " : "no"
+// console.log(cond)
+
+
+// switch statements
+const value = 4
+switch (value){
+    case  3:
+        console.log("value is coreect !")
+        break;
+    case  4:
+        console.log("its is not that value")
+        break;
+    
+    default:
+        console.log("gone there")
+        break;
+}
