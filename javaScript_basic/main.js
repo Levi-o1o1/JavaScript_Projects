@@ -57,6 +57,17 @@ const arr = [1, 2, 4, 5, 5, true]
 const arr2 =  Array.from("ayush")
 console.log(arr2)
 
-arr2[0] = "y"
+arr[0] = "y"
 console.log(arr2)
+
+// while loop do while loops
+
+// do {
+//     console.log("hello")
+// } while (true)
+
+// while (true) {
+//     console.log("yes")
+//     break;
+// }
 
