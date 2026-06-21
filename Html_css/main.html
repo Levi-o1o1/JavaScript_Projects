@@ -146,7 +146,7 @@ button:active{
     <div class="top">CALCULATOR</div>
 
     <div class="display">
-        125
+        0
     </div>
 
     <div class="buttons">
@@ -178,6 +178,51 @@ button:active{
     </div>
 
 </div>
+ <script>
+const display = document.querySelector(".display");
+const buttons = document.querySelectorAll("button");
 
+let currentInput = "";
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const value = button.textContent;
+
+        if (value === "AC") {
+            currentInput = "";
+            display.textContent = "0";
+            return;
+        }
+
+        if (value === "=") {
+            try {
+                currentInput = currentInput
+                    .replace(/×/g, "*")
+                    .replace(/÷/g, "/");
+
+                currentInput = eval(currentInput).toString();
+                display.textContent = currentInput;
+            } catch {
+                display.textContent = "Error";
+                currentInput = "";
+            }
+            return;
+        }
+
+        if (value === "%") {
+            try {
+                currentInput = (eval(currentInput) / 100).toString();
+                display.textContent = currentInput;
+            } catch {
+                display.textContent = "Error";
+            }
+            return;
+        }
+
+        currentInput += value;
+        display.textContent = currentInput;
+    });
+});
+</script>
 </body>
 </html>
