@@ -1,8 +1,10 @@
-*{
-    /* margin: 0;
-    padding: 0; */
-}
 
+.box{
+    background-color: greenyellow;
+    size: 9000px;
+    top: 10.5px;
+    bottom: 100px;
+}
 #box_title{
     right: 10px;
     align-items: center;
